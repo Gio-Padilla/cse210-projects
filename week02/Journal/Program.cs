@@ -1,5 +1,11 @@
 using System;
 
+// Shows creativity and exceeds core requirements
+// For this, I did a couple of this that were more small than large.
+// 1) When saving the prompt, I made it so that it saves it with the time it was saved, just in case the user wants to answer multiple throughout the day.
+// 2) I made it so that it clears the console in orderr to hav3e a more ease of navigation.
+// 3) In the entry class, I made it so that it converts the saved file lines back and forth from its file lines since it deals directly with entries. Refering to ConvertLineToVariables(string lineString) and ReturnConvertedEntryToLine()
+
 class Program
 {
     static void Main(string[] args)
@@ -64,7 +70,7 @@ class Program
             {
                 Console.Clear();
                 Console.WriteLine("You are currently attempting to Load a saved file.");
-                Console.WriteLine("If you leave your response blank, by default it will set the name to 'My Journal'.");
+                Console.WriteLine("If you leave your response blank, by default, it will set the name to 'My Journal'.");
                 Console.Write("What is the name of the file you are trying to open: ");
                 string fileName = Console.ReadLine();
                 if (fileName == "")
@@ -81,7 +87,7 @@ class Program
             {
                 Console.Clear();
                 Console.WriteLine("You are currently attempting to save your data to a file.");
-                Console.WriteLine("If you leave your response blank, by default it will set the name to 'My Journal'.");
+                Console.WriteLine("If you leave your response blank, by default, it will set the name to 'My Journal'.");
                 Console.Write("What is the name of the file you would like to save it to: ");
                 string fileName = Console.ReadLine();
                 if (fileName == "")

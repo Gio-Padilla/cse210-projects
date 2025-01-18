@@ -35,7 +35,7 @@ public class PromptGenerator
     {
         Random random = new Random();
         int randomInt = random.Next(0, _entries.Count - 1);
-        String prompt = _entries[randomInt];
+        string prompt = _entries[randomInt];
         return prompt;
     }
 }

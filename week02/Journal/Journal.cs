@@ -33,7 +33,7 @@ public class Journal
 
     public void LoadFromFile(string fileName)
     {
-        string[] lines = System.IO.File.ReadAllLines(fileName);
+        string[] lines = File.ReadAllLines(fileName);
         foreach (string line in lines)
         {
             Entry entry = new Entry();
