@@ -1,9 +1,10 @@
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 
 public class ListeningActivity : Activity
 {
-    private int _count = 0;
+    private int _count;
     private Random _random = new Random();
     private int _seconds;
     private List<string> _prompts = new List<string>()
@@ -24,7 +25,10 @@ public class ListeningActivity : Activity
         "What are some small acts of kindness you’ve experienced or given?",
         "What are things in your life that you’re looking forward to?"
     };
-    public ListeningActivity() : base("Listening Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.") {}
+    public ListeningActivity() : base("Listening Activity", "This activity will help you reflect on the good things in your life by having you list as many things as you can in a certain area.")
+    {
+        _count = 0;
+    }
 
     public void Run()
     {
