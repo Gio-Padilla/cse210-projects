@@ -1,0 +1,4 @@
+5
+SimpleGoal/*/Say hello to a stranger/*/I want to be able to talk to more people so I have to learn to say hello./*/50/*/False
+EternalGoal/*/Read Scriptures/*/Read my scriptures every day/*/10/*/False/*/0
+ChecklistGoal/*/Throw a ball/*/Practice my arm throwing/*/5/*/False/*/3/*/50/*/1
